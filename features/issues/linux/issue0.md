@@ -5,9 +5,7 @@ docker image構築時のyum installでmirrorlistが存在しないエラーが�
 ```Dockerfile
 FROM centos:7
 
-RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* && \
-    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-* && \
-    yum -y update && yum clean all && \
+RUN yum -y update && yum clean all && \
     yum -y install sudo vim wget make patch gcc openssl-devel pcre-devel zlib-devel && \
     ...
 ```
