@@ -1,1 +1,1 @@
-features/*.java linguist-detected=false
+*.java -linguist-detected
