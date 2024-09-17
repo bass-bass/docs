@@ -16,6 +16,7 @@ ref : https://docs.docker.jp/engine/reference/commandline/cli.html#id2
 * `docekr ps -a` : container一覧
 * `docker images` : image一覧
 * `docker logs {container_id}` : containerのログ確認
+* `docker stop {container_id}` : container停止
 * `docker rm {container_id}` : container削除
 * `docker rmi {image_id}` : image削除
 * `docker inspect {image_id}` : image詳細
