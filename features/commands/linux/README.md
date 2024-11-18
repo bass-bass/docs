@@ -33,3 +33,16 @@ e.g. `find / -name nginx.conf`
 
 ## `cat /etc/redhat-release`
 osバージョンなど確認
+
+## `arp`
+IPとMAcアドレスの対応確認
+https://wa3.i-3-i.info/word11340.html
+* `arp -a {ip_address}` : 確認
+* `arp -d {ip_address}` : 削除（更新の際もこれでキャッシュ削除できる）
+* `arp -s {ip_address} {mac_adddress}` : 登録
+
+## `ip`
+https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print_ja4.pdf
+* `ip addr` : ipアドレスとプロパティ情報の表示
+* `ip link` : ネットワークインターフェイスの管理および表示
+* `ip route` : ルーティングテーブルの変更や表示
